@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+        <TextView
+            android:id="@+id/textViewInstan"
+            android:text="Intansi: "
+            android:textStyle="bold"
+            style="@style/TextContent" />
+        <TextView
+            android:id="@+id/textViewInstansi"
+            android:layout_toRightOf="@id/textViewInstan"
+            android:text="UTD PMI KABUPATEN BANDUNG"
+            android:layout_marginLeft="2dp"
+            style="@style/TextContent" />
+
+            <TextView
+                android:id="@+id/textViewAlama"
+                android:text="Alamat: "
+                android:layout_below="@id/textViewInstan"
+                android:textStyle="bold"
+                style="@style/TextContent" />
+            <TextView
+                android:id="@+id/textViewAlamat"
+                android:layout_toRightOf="@id/textViewAlama"
+                android:layout_below="@id/textViewInstan"
+                android:text="BANDUNG"
+                android:layout_marginLeft="2dp"
+                style="@style/TextContent" />
+
+            <TextView
+                android:id="@+id/textViewJam"
+                android:text="Pukul: "
+                android:layout_below="@id/textViewAlama"
+                android:textStyle="bold"
+                style="@style/TextContent" />
+            <TextView
+                android:id="@+id/textViewPukul"
+                android:layout_toRightOf="@id/textViewJam"
+                android:layout_below="@id/textViewAlama"
+                android:text="14:00"
+                android:layout_marginLeft="2dp"
+                style="@style/TextContent" />
+
+            <TextView
+                android:id="@+id/textViewRencana"
+                android:text="Rencana: "
+                android:layout_below="@id/textViewJam"
+                android:textStyle="bold"
+                style="@style/TextContent" />
+            <TextView
+                android:id="@+id/textViewRencanaDonor"
+                android:layout_toRightOf="@id/textViewRencana"
+                android:layout_below="@id/textViewJam"
+                android:text="80"
+                android:layout_marginLeft="2dp"
+                style="@style/TextContent" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+
